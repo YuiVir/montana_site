@@ -1,0 +1,202 @@
+/* !!! 追加　Q&A 用*/
+@charset "utf-8";
+
+.cp_qq *, .cp_qq *:after, .cp_qq *:before {
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.cp_qq {
+  margin: 0 0 2em 10px;
+  padding: 1em 1em 0.5em 1em;
+  background: #FFEBCD;
+}
+.cp_qq h2 {
+  font-size: 1.4em;
+  position: relative;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  margin-left: -26px;
+  padding: 0.3em;
+  color: #ffffff;
+  background-color: #237C2C;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+
+}
+.cp_qq h2::after {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 0 10px 10px 0;
+  border-style: solid;
+  border-color: transparent #005500 transparent transparent;
+}
+
+.cp_qq dl {
+  margin: 0;
+}
+.cp_qq dt {
+  margin-bottom: 0.5em;
+  padding: 0.2em 0.5em 0.5em 2em;
+  border-radius: 0.2em;
+  background: #ffae4d;
+}
+.cp_qq dd {
+  margin-bottom: 1em;
+  margin-left: 0;
+  padding: 0.5em 1em 1.5em 3em;
+}
+/* QAアイコン */
+.cp_qq dt::before,.cp_qq dd::before{
+  font-size: 1.5em;
+  color: #ffffff;
+}
+.cp_qq dt::before {
+  margin: 0.3em 0.3em 0 -1em;
+  content: 'Q.';
+}
+.cp_qq dd::before {
+  margin: 0 0.5em 0 -2em;
+  padding: 0.2em 0.4em;
+  content: 'A.';
+  border-radius: 0.2em;
+  background: #696969;
+}
+
+/*上選択タブ*/
+
+.cp_qa *, .cp_qa *:before, .cp_qa *:after {
+font-family: 'FontAwesome', sans-serif;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.cp_qa {
+margin: 0 auto;
+background: #ffffff;
+}
+.cp_qa input {
+display: none;
+}
+/* カテゴリー */
+.cp_qa #cp_content1,
+.cp_qa #cp_content2,
+.cp_qa #cp_content3,
+.cp_qa #cp_content4 {
+display: none;
+padding: 20px 0 0;
+border-top: 1px solid #dddddd;
+}
+.cp_qa label.cp_tabitem {
+display: inline-block;
+margin: 0 0 -1px;
+padding: 15px 25px;
+text-align: center;
+color: #bbbbbb;
+border: 1px solid transparent;
+}
+.cp_qa label.cp_tabitem:before {
+margin-right: 10px;
+}
+.cp_qa label.cp_tabitem[for*='1']:before { content: '\f2bd'; }
+.cp_qa label.cp_tabitem[for*='2']:before { content: '\f15c'; }
+.cp_qa label.cp_tabitem[for*='3']:before { content: '\f0f4'; }
+.cp_qa label.cp_tabitem[for*='4']:before { content: '\f001'; }
+.cp_qa label.cp_tabitem:hover {
+cursor: pointer;
+color: #888888;
+}
+.cp_qa input:checked + label {
+color: #555555;
+border: 1px solid #dddddd;
+border-bottom: 1px solid #ffffff;
+}
+/* --ブロックのバーの色 */
+.cp_qa input:checked + label[for*='1'] {
+border-bottom: 5px solid #00BCD4;
+}
+.cp_qa input:checked + label[for*='2'] {
+border-bottom: 5px solid #FF5722;
+}
+.cp_qa input:checked + label[for*='3'] {
+border-bottom: 5px solid #03A9F4;
+}
+.cp_qa input:checked + label[for*='4'] {
+border-bottom: 5px solid #E91E63;
+}
+@media screen and (max-width: 650px) {
+.cp_qa label.cp_tabitem {
+font-size: 0;
+}
+label:before {
+font-size: 18px;
+margin: 0;
+}
+}
+@media screen and (max-width: 400px) {
+.cp_qa label.cp_tabitem {
+padding: 15px;
+}
+.cp_qa label.cp_tabitem:before {
+margin-right: 0px;
+}
+}
+/* QAブロック */
+.cp_qa #cp_conttab1:checked ~ #cp_content1,
+.cp_qa #cp_conttab2:checked ~ #cp_content2,
+.cp_qa #cp_conttab3:checked ~ #cp_content3,
+.cp_qa #cp_conttab4:checked ~ #cp_content4 {
+display: block;
+}
+.cp_qa .cp_qain {
+overflow-x: hidden;
+margin: 0 auto;
+color: #333333;
+}
+.cp_qa .cp_qain .cp_actab {
+padding: 20px 0;
+border-bottom: 1px dotted #cccccc;
+} 
+
+  /*タイトル文字*/
+ h1 {
+  text-align: center;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  font-weight: normal;
+  font-size: 2em;
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 290px;
+    margin-bottom: 60px;
+}
+ h1:before, h1:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+}
+h1:before {
+  left: 7px;
+}
+ h1:after {
+  right: 7px;
+}
+
+#kk {
+  margin-left: -170px;
+  margin-bottom: -50px;
+  margin-top: -40px;
+}
+
+#mm {
+  margin-top: -100px;
+}

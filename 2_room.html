@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>お食事のご案内【Montana公式】</title>
+    <meta http-equiv="content-type" charset="utf-8">
+    <meta name="description" content="アルツ磐梯スキー場までわずか５分磐梯高原ペンション「ガストホフ　モンターニャ」では四季折々の姿を見せる豊かな自然や磐梯高原の星空を一望でき、開放感に満ちた空間を味わえます。西洋風にコーディネートされた可愛らしい客室でおくつろぎください。">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <!--css-->
+    <link href="css/nav.css" rel="stylesheet" type="text/css" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/guest_room.css" rel="stylesheet" type="text/css" />
+    <link href="css/slid.css" rel="stylesheet" type="text/css" />
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      var setId = '#slideshow02';
+      var fadeTime = 1000;
+      var delayTime = 5000;
+
+      $(setId + ' div div').each(function(i){
+        $(this).attr('id','view' + (i + 1).toString());
+        $(setId + ' div div').css({zIndex:'98',opacity:'0'});
+        $(setId + ' div div:first').css({zIndex:'99'}).stop().animate({opacity:'1'},fadeTime);
+      });
+
+      $(setId + ' ul li').click(function(){
+        var connectCont = $(setId + ' ul li').index(this);
+        var showCont = connectCont+1;
+
+        $(setId + ' div div#view' + (showCont)).siblings().stop().animate({opacity:'0'},fadeTime,function(){$(this).css({zIndex:'98'})});
+        $(setId + ' div div#view' + (showCont)).stop().animate({opacity:'1'},fadeTime,function(){$(this).css({zIndex:'99'})});
+
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+      });
+
+      $(setId + ' ul li:not(.active)').hover(function(){
+        $(this).stop().animate({opacity:'1'},200);
+      },function(){
+        $(this).stop().animate({opacity:'0.5'},200);
+      });
+
+      $(setId + ' ul li').css({opacity:'0.5'});
+      $(setId + ' ul li:first').addClass('active');
+
+      timer();
+
+      function timer() {
+        setTimer = setInterval(function(){
+          $('li.active').each(function(){
+            var listLengh = $(setId + ' ul li').length;
+            var listIndex = $(setId + ' ul li').index(this);
+            var listCount = listIndex+1;
+
+            if(listLengh == listCount){
+              $(setId + ' ul li:first').click()
+            } else {
+              $(this).next('li').click();
+            };
+          });
+        },delayTime);
+      };
+
+      // hoverでスライド動作ストップ
+      $(setId).mouseover(function(){
+        clearInterval(setTimer);
+      }).mousemove(function(){
+        clearInterval(setTimer);
+      }).mouseout(function(){
+        timer();
+      });
+
+    });
+    </script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      var setId = '#slideshow';
+      var fadeTime = 1000;
+      var delayTime = 5000;
+
+      $(setId + ' div div').each(function(i){
+        $(this).attr('id','view' + (i + 1).toString());
+        $(setId + ' div div').css({zIndex:'98',opacity:'0'});
+        $(setId + ' div div:first').css({zIndex:'99'}).stop().animate({opacity:'1'},fadeTime);
+      });
+
+      $(setId + ' ul li').click(function(){
+        var connectCont = $(setId + ' ul li').index(this);
+        var showCont = connectCont+1;
+
+        $(setId + ' div div#view' + (showCont)).siblings().stop().animate({opacity:'0'},fadeTime,function(){$(this).css({zIndex:'98'})});
+        $(setId + ' div div#view' + (showCont)).stop().animate({opacity:'1'},fadeTime,function(){$(this).css({zIndex:'99'})});
+
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+      });
+
+      $(setId + ' ul li:not(.active)').hover(function(){
+        $(this).stop().animate({opacity:'1'},200);
+      },function(){
+        $(this).stop().animate({opacity:'0.5'},200);
+      });
+
+      $(setId + ' ul li').css({opacity:'0.5'});
+      $(setId + ' ul li:first').addClass('active');
+
+      timer();
+
+      function timer() {
+        setTimer = setInterval(function(){
+          $('li.active').each(function(){
+            var listLengh = $(setId + ' ul li').length;
+            var listIndex = $(setId + ' ul li').index(this);
+            var listCount = listIndex+1;
+
+            if(listLengh == listCount){
+              $(setId + ' ul li:first').click()
+            } else {
+              $(this).next('li').click();
+            };
+          });
+        },delayTime);
+      };
+
+      // hoverでスライド動作ストップ
+      $(setId).mouseover(function(){
+        clearInterval(setTimer);
+      }).mousemove(function(){
+        clearInterval(setTimer);
+      }).mouseout(function(){
+        timer();
+      });
+
+    });
+    </script>
+
+
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+      var setId = '#slideshow01';
+      var fadeTime = 1000;
+      var delayTime = 5000;
+
+      $(setId + ' div div').each(function(i){
+        $(this).attr('id','view' + (i + 1).toString());
+        $(setId + ' div div').css({zIndex:'98',opacity:'0'});
+        $(setId + ' div div:first').css({zIndex:'99'}).stop().animate({opacity:'1'},fadeTime);
+      });
+
+      $(setId + ' ul li').click(function(){
+        var connectCont = $(setId + ' ul li').index(this);
+        var showCont = connectCont+1;
+
+        $(setId + ' div div#view' + (showCont)).siblings().stop().animate({opacity:'0'},fadeTime,function(){$(this).css({zIndex:'98'})});
+        $(setId + ' div div#view' + (showCont)).stop().animate({opacity:'1'},fadeTime,function(){$(this).css({zIndex:'99'})});
+
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+      });
+
+      $(setId + ' ul li:not(.active)').hover(function(){
+        $(this).stop().animate({opacity:'1'},200);
+      },function(){
+        $(this).stop().animate({opacity:'0.5'},200);
+      });
+
+      $(setId + ' ul li').css({opacity:'0.5'});
+      $(setId + ' ul li:first').addClass('active');
+
+      timer();
+
+      function timer() {
+        setTimer = setInterval(function(){
+          $('li.active').each(function(){
+            var listLengh = $(setId + ' ul li').length;
+            var listIndex = $(setId + ' ul li').index(this);
+            var listCount = listIndex+1;
+
+            if(listLengh == listCount){
+              $(setId + ' ul li:first').click()
+            } else {
+              $(this).next('li').click();
+            };
+          });
+        },delayTime);
+      };
+
+      // hoverでスライド動作ストップ
+      $(setId).mouseover(function(){
+        clearInterval(setTimer);
+      }).mousemove(function(){
+        clearInterval(setTimer);
+      }).mouseout(function(){
+        timer();
+      });
+
+    });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- slide -->
+  </head>
+  <body>
+
+
+    <div>
+      <img src="./img/topvar.png" style="width:100%">
+    </div>
+  <!-- slide end -->
+
+<!-- navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #bda387;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" style="border-color:rgba(0,0,0,0);">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-md-center" id="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link ml-5" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-5" href="1_dish.html">お食事</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link ml-5" href="#">客室</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-5" href="3_fac.html">館内施設</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-5" href="4_access.html">アクセス</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-5" href="5_place.html">周辺情報</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ml-5" href="6_qa.html">Q&A</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- navbar end -->
+
+
+
+
+
+
+
+
+
+<section id="root">
+  <article class="waku">
+
+<div class="row flex">
+  <!--ここから変更-->
+  <img src="./img/room/room.jpg" width="900" height="300">
+ <h1> 客室のご案内 </h1>
+
+
+<div class="boxA">
+<div class="box1">
+
+<div class="container">
+
+<div id="slideshow02">
+
+<div>
+<div><a href="#1"><img src="./img/room/2_2.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#2"><img src="./img/room/2_4.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#3"><img src="./img/room/3_2.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#4"><img src="./img/room/ame.jpg" width="400" height="300" alt="" /></a></div>
+</div>
+
+<ul>
+<li><a href="javascript:void(0);"><img src="./img/room/2_2.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/2_4.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/3_2.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/ame.jpg" width="50" height="50" alt="" /></a></li>
+</ul>
+
+</div><!--/#slideshow-->
+
+</div><!--/#container-->
+
+</div><!--box1-->
+
+<div class="box2">
+
+<h3><ツイン・トリプル></h3>
+<p class="border">＜ツインルーム＞</p>
+<p>3タイプあり、各お部屋山側にあるため、窓からは磐梯山を見ることができます。
+※こちらのお部屋の添い寝幼児のご宿泊は1名様までとさせていただきます。
+</p><p>
+[設備アメニティ]<br>
+・ユニットバストイレ、ドレッサー付き。<br><br>
+</p>
+<p class="border">＜トリプルルーム＞</p>
+<p>シングルベッドが3台。<br>
+カップル、ご夫婦、お友達同士など2名様のご利用もOK。
+</p><p>
+[設備アメニティ]<br>
+・シャワー＋トイレ＋洗面台、ドレッサー付き。</p>
+
+</div>
+</div>
+
+</article>
+</section>
+
+
+
+
+<section id="root">
+  <article class="waku">
+
+<hr>
+
+<div class="boxA">
+
+
+<div class="box2">
+
+<h3><和洋室></h3>
+<p>ベッド3台＋畳のくつろぎスペースが付いた和洋室。
+小さなお子様連れのファミリーや、足を伸ばしてくつろぎたいグループの皆様にお勧めです。
+冬は暖かいこたつをご用意いたします。<br><br>
+
+[設備アメニティ]<br>
+・シャワー＋トイレ＋洗面台付き<br>
+・こたつ(冬期)、座布団<br>
+・鏡台付き。</p>
+
+</div>
+
+
+<div class="box1">
+
+<div class="container">
+
+<div id="slideshow">
+
+<div>
+<div><a href="#1"><img src="./img/room/4_1.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#2"><img src="./img/room/4_2.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#3"><img src="./img/room/4_3.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#4"><img src="./img/room/setsubi.jpg" width="400" height="300" alt="" /></a></div>
+</div>
+
+<ul>
+<li><a href="javascript:void(0);"><img src="./img/room/4_1.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/4_2.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/4_3.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/setsubi.jpg" width="50" height="50" alt="" /></a></li>
+</ul>
+
+</div><!--/#slideshow-->
+
+</div><!--/#container-->
+
+</div><!--box1-->
+</div><!--coxA-->
+
+</article>
+</section>
+
+<section id="root">
+  <article class="waku">
+
+    <hr>
+
+
+<div class="boxA">
+<div class="box1">
+
+<div class="container">
+
+<div id="slideshow01">
+
+<div>
+<div><a href="#1"><img src="./img/room/cla1.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#2"><img src="./img/room/cla2.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#3"><img src="./img/room/cla5.jpg" width="400" height="300" alt="" /></a></div>
+<div><a href="#4"><img src="./img/room/setsubi1.jpg" width="400" height="300" alt="" /></a></div>
+</div>
+
+<ul>
+<li><a href="javascript:void(0);"><img src="./img/room/cla1.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/cla2.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/cla5.jpg" width="50" height="50" alt="" /></a></li>
+<li><a href="javascript:void(0);"><img src="./img/room/setsubi1.jpg" width="50" height="50" alt="" /></a></li>
+</ul>
+
+</div><!--/#slideshow-->
+
+</div><!--/#container-->
+
+</div><!--box1-->
+
+<div class="box2">
+<h3><クラッシックルーム(ツイン)></h3>
+<p>本場英国製のクラシック家具を配した、ゆったり広めのお部屋タイプ。
+お部屋ごとに異なるアンティーク調のインテリアを楽しみながら、カップル、ご夫婦、お友達同士でゆっくりとお過ごしください。<br><br>
+
+[設備]<br>
+・お茶セット<br>
+・ユニットバス付き、またはシャワー＋トイレ＋洗面台,ドレッサー付き。
+</p>
+
+</div>
+</div>
+
+</article>
+</section>
+
+<section id="root">
+  <article class="waku">
+
+    <hr>
+
+<div class="tt">
+    <table>
+  <tr>
+    <td>部屋数</td>
+    <td>総部屋数8室：(ツイン)３部屋、(トリプル)１部屋、(和洋室)２部屋、(クラッシックツイン)２部屋　</td>
+  </tr>
+  <tr>
+    <td>部屋設備</td>
+    <td> 一部客室バストイレ / 全室冷暖房 / テレビ　</td>
+  </tr>
+    <tr>
+    <td>アメニティ・室内備品</td>
+    <td>ハンドタオル / 歯ブラシ・歯磨き粉 / バスタオル / シャンプー / リンス / ボディーソープ / ドライヤー / 髭剃り / 羽毛布団 </td>
+  </tr>
+    <tr>
+    <td>喫煙・禁煙</td>
+    <td>喫煙所のみ喫煙可</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>利用可能なお支払い方法</td>
+    <td>現金のみ</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>チェックイン時間</td>
+    <td>15:00から</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>チェックアウト時間</td>
+    <td>10:00まで</td>
+  </tr>
+    </tr>
+    <tr>
+    <td>共同で使用する設備</td>
+    <td>ポット / 電子レンジ</td>
+  </tr>
+      </tr>
+          <tr>
+    <td>Wi-fi</td>
+    <td>全室無線LAN利用可</td>
+  </tr>
+      </tr>
+    <tr>
+    <td><その他(注意事項)/td>
+    <td>当ペンションにはパジャマや浴衣がございません。各自ご持参ください。</td>
+  </tr>
+      </tr>
+</table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<span class="d-block p-2 text-white" style="background-color: #00000000; margin-bottom: 10vh;"></span>
+
+<!-- footer -->
+<img src="./img/hutta_3.png" style="width:100%;">
+
+  <div class="row" style="background-color: #124f07; width:100%;">
+<!-- footer nav -->
+    <div class="footmenu">
+     <ul>
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="index.html">お食事</a></li>
+      <li><a href="index.html">客室</a></li>
+      <li><a href="index.html">館内施設</a></li>
+      <li><a href="index.html">アクセス</a></li>
+      <li><a href="index.html">周辺情報</a></li>
+      <li><a href="sample.html"></a></li>
+     </ul>
+    </div>
+
+<!-- footer nav end -->
+
+<!-- Info -->
+      <li class="media mb-3" style="margin: 4vh 28vw 0vh 28vw;">
+        <img src="./img/montana.PNG" style="width:30%;">
+        <div class="media-body" style="margin-top:2vh; font-size: 2vmax;">
+          <a class="text-white ml-3" style="font-size: 1.5vw;">ガストホフ</a>
+          <a class="text-white ml-3" style="font-size: 3vw;">モンターニャ</a>
+          <br><a class="text-white">
+          <br><span class="badge badge-pill badge-success ml-3">TEL</span>　0242-73-3733
+          <br> <span class="badge badge-pill badge-success ml-3">FAX</span>　0242-73-3735
+          <br>
+          <br><a class="text-white ml-3" style="font-size: 1.7vw;">〒969-3301</a>
+          <br><a class="text-white ml-3" style="font-size: 1.7vw;">福島県耶麻郡磐梯町七ッ森7351-2</a>
+        </div>
+      </li>
+  <!-- Info end -->
+
+      <!-- SNS block -->
+      <span class="d-block p-2 text-white"  style="background-color: #124f07; width:98.9%;">
+        <center>
+      <a href="https://www.facebook.com/GasutohofuMontanyaMontana"><img src="./img/facebook_a.png" class="ml-5" style="width:3%;"><span class="text-white ml-2"> facebook</span></a>
+      <a class="ml-5"></a>
+      <a href="https://www.instagram.com/montana.aizu"><img src="./img/instagram.png" style="width:2.6%;"><span class="text-white ml-2"> Instagram</span></a>
+      <a class="text-white ml-5">Gasthof MONTANA © 2019</a>
+      </center>
+      </span>
+      <span class="d-block p-2 text-white" style="background-color: #00000000;"></span>
+      <!-- SNS_end -->
+
+    </div>
+
+  <!-- footer end-->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/*見出し*/
+h2.midashi {
+  padding: .5em .75em;
+  border: 1px solid #ccc;
+  width: 900px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: -6px;
+  position: relative;/*相対位置*/
+  padding-left: 1.3em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+
+}
+
+.fas h2:before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0;/*アイコンの位置*/
+  top: 0;/*アイコンの位置*/
+  color: #5ab9ff; /*アイコン色*/
+}
+/*ここまで*/
+
+/*カラムのところ*/
+.gridWrapper{
+
+clear:both;
+overflow:hidden;
+}
+
+.gridWrapper{
+	display:table;
+	border-collapse:separate;
+	border-spacing:20px;
+	margin-left:-20px;
+	width:980px;
+	}
+
+#sub.gridWrapper{width:980px;}
+
+.grid{
+	float:left;
+	margin:10px 2% 0 0;
+overflow:hidden;
+border-radius:5px;
+background:#fff;
+color: #000000;
+background-color: #fdf5e6;
+}
+
+.grid h3{
+padding:15px 5px;
+text-align:center;
+border-radius:5px 5px 0 0;
+background:#e4e4e4;
+}
+
+.grid p{
+padding:5px 10px;
+}
+
+
+	/* グリッド共通 ベース:トップページ4カラム */
+	.grid{
+	width:220px;
+	display:table-cell;
+	}
+	
+	
+	
+	/* サブコンテンツ + フッター グリッド(3カラム) */
+	#sub .grid,#calm .grid, #footer .grid{width:300px;}
+
+	.grid{
+	float:left;
+	width:30.5%;
+	margin:10px 2% 0 0;
+	}
+	
+	.grid img{
+	float:left;
+	margin-top: -10px;
+	margin-right:5px;
+	margin-left: 6.5px;
+  max-width:100%;
+	height:auto;
+	}
+	
+	#sub .grid,#calm .grid{
+	width:30.5%;
+	margin:10px 1%;
+	}
+	
+	#sub .grid,#calm .grid:first-child{
+	margin-left:0;
+	}
+	
+	#sub .grid,#calm .grid:last-child{
+	margin-right:0;
+	}
+	
+/*ここまで*/
+
+/*カラム*/
+	.calm .grid{
+	margin-top: -50px; 
+	margin-left: 110px;
+	}
+/*ここまで*/
+	#air .grid{
+		margin-bottom: -20px;
+	}
+
+	#air2 .grid{
+		margin-top: -15px;
+		margin-bottom: 20px;
+	}
+
+	/*タイトル文字*/
+h1 {
+  text-align: center;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  font-weight: normal;
+  font-size: 2em;
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 275px;
+}
+h1:before, h1:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+}
+h1:before {
+  left: 7px;
+}
+h1:after {
+  right: 7px;
+}
+
+#kk {
+  margin-left: -170px;
+  margin-bottom: -50px;
+  margin-top: -40px;
+}
+
+p {
+  font-size: 95%;
+}
+
+.boxa {
+	margin-bottom: -5px;
+}
+
+/*ギャラリー*/
+.boxA:after {
+  content: " ";
+  display: block;
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.box1 {
+  float: left;
+  width: 22%;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+.box2 {
+  float: left;
+  width: 22%;
+  margin-top: 0px;
+  margin-left: 12px;
+}
+.box3 {
+  float: left;
+  width: 22%;
+  margin-top: 0px;
+  margin-left: 12px;
+}
+.box4 {
+  float: left;
+  width: 22%;
+  margin-top: 0px;
+  margin-left: 12px;
+}
+
+.tit {
+	text-align: center;
+	margin-bottom: -3px;
+	text-decoration: underline;
+}

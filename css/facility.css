@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/*Border*/
+hr {
+ border: none;
+ border: dotted;
+ color: #afafaf;
+ width: 915px;
+ margin-top: -60px;
+}
+
+/*タイトル文字*/
+h1 {
+  text-align: center;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  font-weight: normal;
+  font-size: 2em;
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 95px;
+  margin-bottom: 30px;
+}
+h1:before, h1:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+}
+h1:before {
+  left: 7px;
+}
+h1:after {
+  right: 7px;
+}
+
+
+/*中の記事*/
+.boxA:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.box1 {
+  float: left;
+  width: 48%;
+  margin-top: 35px;
+  margin-left: 15px;
+}
+.box2 {
+  float: left;
+  width: 48%;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+
+
+
+/*ギャラリー*/
+.boxB:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.box5 {
+  float: left;
+  width: 31%;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.box6 {
+  float: left;
+  width: 31%;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+.box7 {
+  float: left;
+  width: 31%;
+  margin-top: 40px;
+  margin-left: 15px;
+}
+
+
+/*青フォント*/
+h3 {
+  margin-bottom: 5px;
+  color: #0099CC;
+  font-family: "ヒラギノ角ゴ Pro W3", Osaka, "MS UI Gothic",  "ＭＳ Ｐゴシック", Verdana, Myriad, Helvetica, "MS Trebuchet", Arial, sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 95%;
+}

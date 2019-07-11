@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+
+.breadcrumb > li + li:before {
+  content: ">";
+}
+
+body{}
+
+
+/*================================================
+ *  フッター
+ ================================================*/
+footer {
+ clear: both;
+}
+
+.footmenu {
+ width: 100%;
+ padding: 20px 0;
+ overflow: hidden;
+ background: #fff;
+ margin-bottom: 20px;
+}
+.footmenu ul {
+ position: relative;
+ float: left;
+ left: 50%;
+ margin: 0;
+ padding: 0;
+}
+.footmenu li {
+ position: relative;
+ left: -50%;
+ float: left;
+ list-style: none;
+ margin: 0;
+ padding: 0 15px;
+ font-size: 3vw;
+ text-align: center;
+}
+.footmenu a {
+ color: #333;
+ text-decoration: none;
+}
+.footmenu a:hover {
+ color: #2a8064;
+ text-decoration: underline;
+}
+
+.copyright {
+ clear: both;
+ padding: 20px 0;
+ font-size: 11px;
+ text-align: center;
+ color: #efede9;
+ background: #2e2e2e;
+}

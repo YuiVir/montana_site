@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+.waku h2 {
+  position: relative;/*相対位置*/
+  padding-left: 1.3em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+  font-size: 21.5px;
+  width: 900px;
+  border-bottom: solid 3px #5ab9ff;
+  font-weight: 500;
+
+}
+
+.waku .fas h2:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f015";/*アイコンのユニコード*/
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0;/*アイコンの位置*/
+  top: 0;/*アイコンの位置*/
+  color: #5ab9ff; /*アイコン色*/
+}
+
+.plus,
+.plus_y{
+  text-indent: -1rem;
+  padding-left: 1rem;
+  margin-top:15px;
+}
+.plus:before{
+  content:"> ";
+  font-weight: bold;
+}
+.plus_y:before{
+  content:"> ";
+  font-weight: bold;
+  color: #ffc408;
+}
+
+/*#a{
+  margin-bottom: 20px;
+}*/
+
+/*タイトル文字*/
+h1 {
+  text-align: center;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  font-weight: normal;
+  font-size: 2em;
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 285px;
+  margin-bottom: 60px;
+}
+h1:before, h1:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+}
+h1:before {
+  left: 7px;
+}
+h1:after {
+  right: 7px;
+}
+
+#kk {
+  margin-left: -170px;
+}

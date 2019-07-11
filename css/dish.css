@@ -1,0 +1,179 @@
+@charset "UTF-8";
+
+/*見出し*/
+h2.midashi {
+  padding: .5em .75em;
+  border: 1px solid #ccc;
+  width: 900px; 
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: -6px;
+  position: relative;/*相対位置*/
+  padding-left: 1.3em;/*アイコン分のスペース*/
+  line-height: 1.4;/*行高*/
+
+}
+
+.fas h2:before {
+  font-family: "Font Awesome 5 Free";
+  position: absolute;/*絶対位置*/
+  font-size: 1em;/*サイズ*/
+  left: 0;/*アイコンの位置*/
+  top: 0;/*アイコンの位置*/
+  color: #5ab9ff; /*アイコン色*/
+}
+/*ここまで*/
+
+/*カラムのところ*/
+.gridWrapper{
+
+clear:both;
+overflow:hidden;
+}
+
+.gridWrapper{
+  display:table;
+  border-collapse:separate;
+  border-spacing:20px;
+  margin-left:-20px;
+  width:980px;
+  margin-bottom: -40px;
+  }
+
+#sub.gridWrapper{width:980px;}
+
+.grid{
+  float:left;
+  margin:10px 2% 0 0;
+overflow:hidden;
+border-radius:5px;
+background:#fff;
+color: #000000;
+background-color: #fdf5e6;
+}
+
+.grid p{
+padding:5px 10px;
+}
+
+
+  /* グリッド共通 ベース:トップページ4カラム */
+  .grid{
+  width:220px;
+  display:table-cell;
+  }
+  
+  
+  
+  /* サブコンテンツ + フッター グリッド(3カラム) */
+  #sub .grid,#calm .grid, #footer .grid{width:300px;}
+
+  .grid{
+  float:left;
+  width:30.5%;
+  margin:10px 2% 0 0;
+  }
+  
+  .grid img{
+  float:left;
+  margin-top: 10px;
+  margin-right:5px;
+  margin-left: 8px;
+  margin-bottom: -40px;
+  max-width:100%;
+  
+  margin-bottom: 10px;
+  }
+  
+  #sub .grid,#calm .grid{
+  width:30.5%;
+  margin:10px 1%;
+  }
+  
+  #sub .grid,#calm .grid:first-child{
+  margin-left:0;
+  }
+  
+  #sub .grid,#calm .grid:last-child{
+  margin-right:0;
+  }
+  
+/*ここまで*/
+
+/*ここまで*/
+  #air .grid{
+    margin-bottom: 20px;
+  }
+
+
+
+/*タイトル文字*/
+h1 {
+  text-align: center;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+  font-weight: normal;
+  font-size: 2em;
+  width: 700px;
+  margin-top: 50px;
+  margin-left: 95px;
+  margin-bottom: 30px;
+}
+h1:before, h1:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: black;
+}
+h1:before {
+  left: 7px;
+}
+h1:after {
+  right: 7px;
+}
+
+
+/*文章*/
+
+.word{
+  float:left;
+  margin:10px 2% 0 0;
+overflow:hidden;
+border-radius:5px;
+background:#fff;
+color: #000000;
+background-color: #fdf5e6;
+margin-top: -20px;
+}
+
+.word p{
+padding:5px 10px;
+}
+
+/*青フォント*/
+h3 {
+  margin-bottom: 5px;
+  color: #0099CC;
+  font-family: "ヒラギノ角ゴ Pro W3", Osaka, "MS UI Gothic",  "ＭＳ Ｐゴシック", Verdana, Myriad, Helvetica, "MS Trebuchet", Arial, sans-serif;
+  font-size: 120%;
+  font-weight: bold;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+/*Border*/
+hr {
+ border: none;
+ border: dotted;
+ color: #afafaf;
+ width: 915px;
+}
+p {
+  font-size: 95%;
+}
