@@ -36,7 +36,7 @@ overflow:hidden;
   display:table;
   border-collapse:separate;
   border-spacing:20px;
-  margin-left:-20px;
+  margin: auto;
   width:980px;
   margin-bottom: -40px;
   }
@@ -118,10 +118,8 @@ h1 {
   font-weight: normal;
   font-size: 2em;
   width: 700px;
-  margin-top: 50px;
-  margin-left: 95px;
-  margin-bottom: 30px;
-}
+  margin: auto;
+  }
 h1:before, h1:after {
   content: '';
   position: absolute;

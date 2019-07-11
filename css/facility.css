@@ -19,9 +19,7 @@ h1 {
   font-weight: normal;
   font-size: 2em;
   width: 700px;
-  margin-top: 50px;
-  margin-left: 95px;
-  margin-bottom: 30px;
+  margin: auto;
 }
 h1:before, h1:after {
   content: '';

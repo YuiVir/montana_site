@@ -51,9 +51,7 @@ h1 {
   font-weight: normal;
   font-size: 2em;
   width: 700px;
-  margin-top: 50px;
-  margin-left: 285px;
-  margin-bottom: 60px;
+  margin: auto;
 }
 h1:before, h1:after {
   content: '';
@@ -69,8 +67,4 @@ h1:before {
 }
 h1:after {
   right: 7px;
-}
-
-#kk {
-  margin-left: -170px;
 }
