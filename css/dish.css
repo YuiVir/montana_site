@@ -4,7 +4,7 @@
 h2.midashi {
   padding: .5em .75em;
   border: 1px solid #ccc;
-  width: 900px; 
+  width: 900px;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
@@ -27,7 +27,7 @@ h2.midashi {
 
 /*カラムのところ*/
 .gridWrapper{
-
+margin: auto;
 clear:both;
 overflow:hidden;
 }
@@ -63,9 +63,9 @@ padding:5px 10px;
   width:220px;
   display:table-cell;
   }
-  
-  
-  
+
+
+
   /* サブコンテンツ + フッター グリッド(3カラム) */
   #sub .grid,#calm .grid, #footer .grid{width:300px;}
 
@@ -74,7 +74,7 @@ padding:5px 10px;
   width:30.5%;
   margin:10px 2% 0 0;
   }
-  
+
   .grid img{
   float:left;
   margin-top: 10px;
@@ -82,23 +82,23 @@ padding:5px 10px;
   margin-left: 8px;
   margin-bottom: -40px;
   max-width:100%;
-  
+
   margin-bottom: 10px;
   }
-  
+
   #sub .grid,#calm .grid{
   width:30.5%;
   margin:10px 1%;
   }
-  
+
   #sub .grid,#calm .grid:first-child{
   margin-left:0;
   }
-  
+
   #sub .grid,#calm .grid:last-child{
   margin-right:0;
   }
-  
+
 /*ここまで*/
 
 /*ここまで*/
@@ -142,7 +142,7 @@ h1:after {
 /*文章*/
 
 .word{
-  float:left;
+
   margin:10px 2% 0 0;
 overflow:hidden;
 border-radius:5px;

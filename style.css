@@ -14,6 +14,9 @@ body{}
 footer {
  clear: both;
 }
+.wrapper{
+  text-align: center;
+}
 
 .footmenu {
  width: 100%;
